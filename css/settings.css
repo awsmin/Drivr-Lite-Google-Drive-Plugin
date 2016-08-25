@@ -1,0 +1,426 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.wrap-in {
+    padding: 0 15px;
+}
+
+.wpdvr-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 10px 0 20px;
+    margin: 0;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.wpdvr-left-col {
+    width: 66.66666667%;
+    padding: 0 15px;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wpdvr-right-col {
+    width: 33.33333333%;
+    padding: 0 15px;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wpdvr-tabs {
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 40px;
+}
+
+.wpdvr-tabs li {
+    float: left;
+    padding: 0 5px;
+    margin-bottom: -1px;
+}
+
+.wpdvr-tabs a {
+    display: block;
+    border: 1px solid #d0d0d0;
+    padding: 8px 20px;
+    color: #010101;
+    background: #e5e5e5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wpdvr-tabs .active a {
+    background: #f1f1f1;
+    border-bottom-color: #f1f1f1;
+}
+
+.wpdvr-form-item {
+    padding-bottom: 30px;
+}
+
+.wpdvr-form-item h3 {
+    font-weight: normal;
+}
+
+.wpdvr-inline-item {
+    padding: 0;
+    margin: 0 -5px;
+    list-style: none;
+}
+
+.wpdvr-inline-item li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+}
+
+.wpdvr-form-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.wpdvr-form-control {
+    height: 40px;
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    padding: 6px 12px;
+    width: 100%;
+}
+
+.small-input {
+    max-width: 100px;
+}
+
+.wpdvr-help-block {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.wpdvr-service-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wpdvr-service-list li {
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 18px 90px 18px 50px;
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+}
+
+.wpdvr-service-list .ui-state-highlight{
+    min-height: 30px;
+    background: none;
+}
+
+.wpdvr-service-list .ui-sortable-helper{
+    -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+}
+.wpdvr-service-list .unsortable .wpdvr-dragger{
+    opacity: 0.2;
+    cursor: not-allowed;
+}
+
+.wpdvr-dragger {
+    position: absolute;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon-move.png) no-repeat;
+    background-size: 15px 15px;
+    top: 50%;
+    margin-top: -10px;
+    cursor: move;
+}
+
+.wpdvr-service-list li .switch {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -14px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+    padding-right: 36px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ed3f0c;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    width: 48px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+    background-color: #2196F3;
+}
+
+.switch input:disabled + .slider {
+    background-color: #ebebeb;
+}
+
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(20px);
+}
+
+.switch span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+    width: 30px;
+}
+
+.switch .off {
+    opacity: 1;
+}
+
+.switch input:checked ~ .on {
+    opacity: 1;
+}
+
+.switch input:checked ~ .off {
+    opacity: 0;
+}
+
+.wp-core-ui .button.wpdvr-btn-lg {
+    padding: 0 24px;
+    font-size: 16px;
+    height: 40px;
+}
+
+.form-col-2 {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*--- Sidebar -----*/
+
+.we-are-awsm {
+    border: 1px solid #d7d7d7;
+    padding: 26px 20px;
+}
+
+.wpdvr-right-inner {
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.wpdvr-right-inner h3 {
+    margin: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #5b5b5b;
+    font-weight: normal;
+}
+
+.wpdvr-right-inner ol {
+    padding: 0 20px 15px;
+    margin: 0 0 0 20px;
+}
+
+.wpdvr-right-inner ol a {
+    text-decoration: none;
+}
+
+.awsm-branding {
+    overflow: hidden;
+}
+
+.awsm-branding img {
+    float: left;
+    margin-right: 15px;
+}
+
+.left-clear {
+    overflow: hidden;
+}
+
+.awsm-branding h2 {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.awsm-branding h3 {
+    font-size: 18px;
+    padding: 0 0 10px;
+    margin: 0;
+}
+
+.awsm-branding h3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.awsm-social {
+    list-style-type: none;
+    margin: 0;
+}
+
+.awsm-social li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.awsm-icon {
+    background: url(../images/icon-sprite.jpg) no-repeat;
+    display: block;
+    width: 21px;
+    height: 21px;
+    text-indent: -999999px;
+    opacity: 0.46;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+.awsm-icon:hover {
+    opacity: 1;
+}
+
+.awsm-icon-twitter {
+    background-position: -26px 0;
+}
+
+.awsm-icon-github {
+    background-position: -52px 0;
+}
+
+.awsm-icon-behance {
+    background-position: -78px 0;
+    width: 28px;
+}
+
+.awsm-icon-dribbble {
+    background-position: right 0;
+}
+
+.paypal {
+    text-align: center;
+}
+
+.paypal input.small {
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.paypal .donate-btn {
+    vertical-align: top;
+    padding: 0;
+}
+
+.wpdvr-right-widget {
+    margin-bottom: 15px;
+}
+
+.row-2 {
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.col-2 {
+    float: left;
+    padding: 0 1px;
+    width: 50%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.col-2 a {
+    background: #fff;
+    display: block;
+    text-align: center;
+    padding: 25px 10px;
+    text-decoration: none;
+}
+
+.col-2 a img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+@media (max-width: 1024px) {
+    .wpdvr-left-col {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .wpdvr-right-col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 678px) {
+    .form-col-2 {
+        width: 100%;
+    }
+}

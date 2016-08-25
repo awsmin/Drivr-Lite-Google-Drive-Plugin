@@ -1,0 +1,293 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-07-27 00:15+0530\n"
+"PO-Revision-Date: 2016-07-27 00:14+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: drivr-for-google-drive.php:74
+msgid "Google Drive"
+msgstr ""
+
+#: drivr-for-google-drive.php:75
+msgid "Upload to Google Drive"
+msgstr ""
+
+#: drivr-for-google-drive.php:76
+msgid "Recent Files"
+msgstr ""
+
+#: drivr-for-google-drive.php:77
+msgid "Videos"
+msgstr ""
+
+#: drivr-for-google-drive.php:78
+msgid "Spreadsheets"
+msgstr ""
+
+#: drivr-for-google-drive.php:79
+msgid "PDFs"
+msgstr ""
+
+#: drivr-for-google-drive.php:80
+msgid "Presentations"
+msgstr ""
+
+#: drivr-for-google-drive.php:81
+msgid "Docs"
+msgstr ""
+
+#: drivr-for-google-drive.php:82
+msgid "Photos"
+msgstr ""
+
+#: drivr-for-google-drive.php:83
+msgid "YouTube Search"
+msgstr ""
+
+#: drivr-for-google-drive.php:130
+msgid "No Url Found"
+msgstr ""
+
+#: drivr-for-google-drive.php:188
+msgid "Add From Drive"
+msgstr ""
+
+#: drivr-for-google-drive.php:220
+msgid "Settings"
+msgstr ""
+
+#: drivr-for-google-drive.php:258
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: drivr-for-google-drive.php:393
+msgid "Add From Google Drive"
+msgstr ""
+
+#: drivr-for-google-drive.php:413
+msgid "You do not have sufficient permissions to upload files"
+msgstr ""
+
+#: drivr-for-google-drive.php:417
+msgid "Verification failed"
+msgstr ""
+
+#: drivr-for-google-drive.php:443
+msgid "Invalid URL Provided."
+msgstr ""
+
+#: drivr-for-google-drive.php:447
+msgid "Could not create Temporary file."
+msgstr ""
+
+#: drivr-for-google-drive.php:544
+msgid "Invalid URL"
+msgstr ""
+
+#: inc/popup.php:11
+msgid "Add from Google Drive"
+msgstr ""
+
+#: inc/popup.php:28
+msgid "Insert Options"
+msgstr ""
+
+#: inc/popup.php:36
+msgid "Embed this"
+msgstr ""
+
+#: inc/popup.php:45
+msgid "Title"
+msgstr ""
+
+#: inc/popup.php:51
+msgid "Caption"
+msgstr ""
+
+#: inc/popup.php:57
+msgid "Alt text"
+msgstr ""
+
+#: inc/popup.php:68
+msgid "Alignment"
+msgstr ""
+
+#: inc/popup.php:72
+msgid "Left"
+msgstr ""
+
+#: inc/popup.php:75
+msgid "Center"
+msgstr ""
+
+#: inc/popup.php:78
+msgid "Right"
+msgstr ""
+
+#: inc/popup.php:81 inc/popup.php:97
+msgid "None"
+msgstr ""
+
+#: inc/popup.php:87 inc/popup.php:133
+msgid "Link"
+msgstr ""
+
+#: inc/popup.php:91
+msgid "Media File"
+msgstr ""
+
+#: inc/popup.php:94
+msgid "Custom URL"
+msgstr ""
+
+#: inc/popup.php:105
+msgid "Size"
+msgstr ""
+
+#: inc/popup.php:124
+msgid "Insert as a link"
+msgstr ""
+
+#: inc/popup.php:137
+msgid "Force Download"
+msgstr ""
+
+#: inc/popup.php:140
+msgid "Drive Preview"
+msgstr ""
+
+#: inc/popup.php:147
+msgid "Open in new tab"
+msgstr ""
+
+#: inc/popup.php:157
+msgid "Link text"
+msgstr ""
+
+#: inc/popup.php:173
+#, php-format
+msgid ""
+"The file you have selected is private. <a href=\"#\" id=\"drivr-file-link\" "
+"target=\"_blank\">Open file</a> and <a href=\"%1$s\" target=\"_blank\">make "
+"it public.</a>"
+msgstr ""
+
+#: inc/popup.php:185
+msgid "Insert"
+msgstr ""
+
+#: inc/popup.php:185
+msgid "Loading..."
+msgstr ""
+
+#: inc/popup.php:188
+msgid "Cancel"
+msgstr ""
+
+#: inc/popup.php:200
+msgid "API Key not found!"
+msgstr ""
+
+#: inc/popup.php:202
+#, php-format
+msgid ""
+"<p>The plugin needs you to submit your Google Drive API key. Just only once! "
+"<a href=\"%1$s\" target=\"_blank\">Get your key</a>\n"
+"                and paste it in <a href=\"%2$s\">settings page</a></p>"
+msgstr ""
+
+#: inc/settings.php:5
+msgid "Drivr - Google Drive Plugin by AWSM.in"
+msgstr ""
+
+#: inc/settings.php:9
+msgid "General"
+msgstr ""
+
+#: inc/settings.php:10
+msgid "Keys"
+msgstr ""
+
+#: inc/settings.php:18
+msgid "Manage services"
+msgstr ""
+
+#: inc/settings.php:40
+msgid "ON"
+msgstr ""
+
+#: inc/settings.php:41
+msgid "OFF"
+msgstr ""
+
+#: inc/settings.php:52
+msgid "Save Settings"
+msgstr ""
+
+#: inc/settings.php:61
+msgid "Google API Access"
+msgstr ""
+
+#: inc/settings.php:64
+msgid "Client ID"
+msgstr ""
+
+#: inc/settings.php:68
+msgid "API Key"
+msgstr ""
+
+#: inc/settings.php:72
+msgid "Get my key"
+msgstr ""
+
+#: inc/settings.php:72
+msgid "How to get it?"
+msgstr ""
+
+#: inc/settings.php:89
+msgid "Designed and developed by"
+msgstr ""
+
+#: inc/settings.php:90
+msgid "awsm innovations"
+msgstr ""
+
+#: inc/settings.php:104
+msgid "Like the plugin?"
+msgstr ""
+
+#: inc/settings.php:104
+msgid "Rate Now!"
+msgstr ""
+
+#: inc/settings.php:110
+msgid "Need Help?"
+msgstr ""
+
+#: inc/settings.php:110
+msgid "Open a Ticket"
+msgstr ""
+
+#: inc/settings.php:117
+msgid "More Links"
+msgstr ""
+
+#: inc/settings.php:119
+msgid "Getting Google Drive API Keys"
+msgstr ""
+
+#: inc/settings.php:120
+msgid "FAQs"
+msgstr ""
