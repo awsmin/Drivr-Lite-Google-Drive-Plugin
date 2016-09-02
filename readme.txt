@@ -45,6 +45,12 @@ Drivr uses Google Drive Picker API to let users interact with their Google Drive
 
 == Screenshots ==
 
+1. ‘Add From Driv' button integrated into WordPress visual editor
+2. Add document popup
+3. Upload document
+4. Embedding document
+5. Insert image
+
 == Frequently Asked Questions ==
 = Can I remove download/popout buttons from the embed?=
 
