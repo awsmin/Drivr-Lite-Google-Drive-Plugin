@@ -16,7 +16,7 @@ What makes Drivr stands out is the way it handles different type of files. If yo
 
 Drivr uses Google Drive Picker API to let users interact with their Google Drive Account.
 
-##Key Features
+Key Features
 
 * View files from your Google Drive Account
 * Drag-n-drop upload files to your Google Drive Account
@@ -27,7 +27,8 @@ Drivr uses Google Drive Picker API to let users interact with their Google Drive
 * Insert images to Visual Editor
 * Options for images to change dimensions, add captions, etc
 
-## Pro Version Features
+Pro Version Features
+
 * Upload multiple files at once
 * Mutli-select option to choose files from Drive
 * Add Featured Image from Google Drive 
@@ -39,7 +40,7 @@ Drivr uses Google Drive Picker API to let users interact with their Google Drive
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/drivr-lite` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/drivr-google-drive-file-picker` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Get your Google API Key and Client ID and add them in Drivr Lite settings page
 
@@ -52,7 +53,8 @@ Drivr uses Google Drive Picker API to let users interact with their Google Drive
 5. Insert image
 
 == Frequently Asked Questions ==
-= Can I remove download/popout buttons from the embed?=
+
+= Can I remove download/popout buttons from the embed? =
 
 Unfortunately we do not have the privilege to alter any features and options that comes by default with the Google Drive Embed, including the download button.
 
