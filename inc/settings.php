@@ -99,6 +99,24 @@ $tab = isset( $_GET['tab'] ) ? $_GET['tab'] : 'general'; if(!in_array($tab, arra
                </div>
             </div>
          </div>
+         <div class="wpdvr-right-inner wpdvr-upgrade-msg">
+            <h2><?php _e('Upgrade to Drivr Pro for <br> more cool features',$this->text_domain);?></h2>
+            <ul class="wpdvr-upgrade-lsit">
+               <li><strong><?php _e('Choose upload folder',$this->text_domain);?></strong><br>
+               <?php _e('Option to choose upload folder in your Drive',$this->text_domain);?></li>
+               <li><strong><?php _e('Multiple file handling',$this->text_domain);?></strong><br>
+               <?php _e('Upload and insert multiple files in one go',$this->text_domain);?></li>
+               <li><strong><?php _e('Featured image from Drive',$this->text_domain);?></strong><br>
+               <?php _e('Add featured image from your Google Drive',$this->text_domain);?></li>
+               <li><strong><?php _e('More tabs',$this->text_domain);?></strong><br>
+               <?php _e('More ways to explore your Drive',$this->text_domain);?></li>
+               <li><strong><?php _e('YouTube tab',$this->text_domain);?></strong><br>
+               <?php _e('Embed videos from YouTube easily',$this->text_domain);?></li>
+            </ul>
+            <a class="wpdvr-btn-upgrade" href="http://goo.gl/y4Uf2w" target="_blank"><?php _e('Upgrade to Drivr Pro ($17)',$this->text_domain);?></a>
+            <p><?php _e('Lifetime license for one website. Unlimited updates.',$this->text_domain);?></p>
+         </div>
+         <!-- .wpdvr-right-inner -->
          <!-- .wpdvr-right-inner -->
          <div class="clearfix row-2 wpdvr-right-widget">
             <div class="col-2">

@@ -179,7 +179,6 @@ input.input-group-text {
     text-align: center;
 }
 
-
 .hidden {
     display: none;
 }
@@ -274,12 +273,11 @@ ul.list-unstyled {
     overflow: hidden;
 }
 
-
-.wpdrivr-options input[type="text"], .wpdrivr-options select {
+.wpdrivr-options input[type="text"],
+.wpdrivr-options select {
     padding: 8px;
     height: 34px;
 }
-
 
 .wpdrivr-options label.no-style {
     width: auto;
@@ -299,7 +297,6 @@ ul.list-unstyled {
     width: 70%;
     margin: 0;
 }
-
 
 .wpdrivr-options textarea.input-item {
     height: 45px;
@@ -342,7 +339,8 @@ input#awsm-new-tab {
     color: #181818;
     padding: 50px;
 }
-.nokey-close{
+
+.nokey-close {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -500,12 +498,15 @@ p.drivr-error {
 .wpdvr-form-item .ui-sortable-helper {
     box-shadow: 4px 0px 17px #ddd;
 }
+
 .picker-dialog {
     z-index: 20000091 !important;
 }
+
 .picker-dialog-bg {
     z-index: 20000090 !important;
 }
+
 @media (max-width: 820px) {
     .wpdrv-col-50 {
         width: auto;

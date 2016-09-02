@@ -201,7 +201,7 @@
                 <h3><?php _e('API Key not found!', $this->text_domain);?></h3>
                 <p>
                 <?php printf( __('<p>The plugin needs you to submit your Google Drive API key. Just only once! <a href="%1$s" target="_blank">Get your key</a>
-                and paste it in <a href="%2$s">settings page</a></p>',$this->text_domain), 'https://console.developers.google.com/project','options-general.php?page=drivr-settings&amp;tab=cloud');?>
+                and paste it in <a href="%2$s">settings page</a></p>',$this->text_domain), 'https://console.developers.google.com/project','options-general.php?page=drivr-settings-free&amp;tab=cloud');?>
             </div>
             <!-- .wpdrv-api-key-content-->
         </div>

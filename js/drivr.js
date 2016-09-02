@@ -130,7 +130,9 @@ var Drivr = (function($) {
                 .setCallback(picker_callback);
             $.each(service_order, function(index, view) {
                 if (service_list[view]) {
-                    picker.addView(views[view]);
+                    if(views[view]){
+                        picker.addView(views[view]);
+                    }   
                 }
             });
             picker.build().setVisible(true);

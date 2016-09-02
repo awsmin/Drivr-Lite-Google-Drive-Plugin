@@ -124,16 +124,17 @@
     font-size: 14px;
 }
 
-.wpdvr-service-list .ui-state-highlight{
+.wpdvr-service-list .ui-state-highlight {
     min-height: 30px;
     background: none;
 }
 
-.wpdvr-service-list .ui-sortable-helper{
-    -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+.wpdvr-service-list .ui-sortable-helper {
+    -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
 }
-.wpdvr-service-list .unsortable .wpdvr-dragger{
+
+.wpdvr-service-list .unsortable .wpdvr-dragger {
     opacity: 0.2;
     cursor: not-allowed;
 }
@@ -407,6 +408,68 @@
 .col-2 a img {
     display: block;
     margin: 0 auto 10px;
+}
+
+.wpdvr-upgrade-msg {
+    padding: 30px;
+}
+
+.wpdvr-upgrade-msg h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.wpdvr-upgrade-lsit {
+    color: #363636;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.wpdvr-upgrade-lsit li {
+    padding-left: 35px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.wpdvr-upgrade-lsit li:before {
+    content: "\f147";
+    font-size: 32px;
+    font-family: 'dashicons';
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.wpdvr-upgrade-msg p {
+    font-size: 12px;
+    color: #414141;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.wpdvr-btn-upgrade {
+    background-color: #0085ba;
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.wpdvr-btn-upgrade:hover,
+.wpdvr-btn-upgrade:active,
+.wpdvr-btn-upgrade:focus {
+    color: #fff;
+    background-color: #008fc8;
+    outline: none;
+    box-shadow: none;
 }
 
 @media (max-width: 1024px) {
