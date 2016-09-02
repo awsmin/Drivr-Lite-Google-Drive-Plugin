@@ -377,7 +377,7 @@ var Drivr = (function($) {
         },
         showerror = function(message) {
             $('.wpdvr-file-private').removeClass('hidden');
-            $('#drivr-file-link').attr('href', drivrdoc.url);
+            $('#drivr-file-link').attr('href', drivrdoc[0].url);
         },
         hiderror = function() {
             $('.wpdvr-file-private').addClass('hidden');
