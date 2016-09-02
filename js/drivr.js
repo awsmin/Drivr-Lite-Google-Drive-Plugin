@@ -1,7 +1,7 @@
 var Drivr = (function($) {
     'use strict';
     var drivrdoc,
-        multiple=false,
+        multiple = false,
         pluginurl = '',
         $handle,
         picker = 'file',
@@ -87,13 +87,13 @@ var Drivr = (function($) {
             DrivrEl.setAttribute('gapi_processed', 'true');
             document.head.appendChild(DrivrEl);
         },
-        no_api_handle =function(){
+        no_api_handle = function() {
             $('#wpdrivr-nokey').removeClass('hidden');
             $('#wpdrivr-popup').addClass('api-key-pop');
             $('#wpdrivr-popup-settings').addClass('hidden');
             tb_show("Drivr", "#TB_inline?inlineId=wpdrivr-popup-wrap&amp;width=1030&amp;modal=true", null);
             popup_position();
-            return false; 
+            return false;
         },
         load_gapi = function() {
             reset();
@@ -120,8 +120,8 @@ var Drivr = (function($) {
         },
         file_picker = function() {
             var views = {
-                drive: new google.picker.DocsView().setIncludeFolders(true),
-                upload: new google.picker.DocsUploadView().setIncludeFolders(true),
+                drive: new google.picker.DocsView(),
+                upload: new google.picker.DocsUploadView(),
             };
             var picker = new google.picker.PickerBuilder()
                 .setOrigin(origin)
@@ -153,17 +153,17 @@ var Drivr = (function($) {
             if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
                 drivrdoc = data[google.picker.Response.DOCUMENTS];
                 tb_show("Drivr", "#TB_inline?inlineId=wpdrivr-popup-wrap&amp;width=1030&amp;modal=true", null);
-                if(drivrdoc.length>1){ multiple = true;}
+                if (drivrdoc.length > 1) { multiple = true; }
                 popup_position();
                 file_handle();
             }
         },
-        get_file_data = function(id){
+        get_file_data = function(id) {
             return $.ajax({
                 type: "GET",
-                url: 'https://www.googleapis.com/drive/v2/files/'+id,
+                url: 'https://www.googleapis.com/drive/v2/files/' + id,
                 dataType: "json",
-                beforeSend: function (xhr) {
+                beforeSend: function(xhr) {
                     xhr.setRequestHeader('Authorization', 'Bearer ' + oauthToken);
                 },
                 error: function(c) {
@@ -173,14 +173,14 @@ var Drivr = (function($) {
         },
         file_handle = function() {
             var handle = "document";
-            if(multiple){
+            if (multiple) {
                 $('#drivr-filename').html(drivrjs.multiplefile);
                 $('#drivr-icon').removeClass().addClass('multiple');
                 $handle = $('#wpdrv-embed-' + handle);
                 $('#awsm-link-holder').hide();
-            }else{
+            } else {
                 var doc = drivrdoc[0];
-                doctype = doc.type,mimetype=doc.mimeType;
+                doctype = doc.type, mimetype = doc.mimeType;
                 $('#drivr-filename').html(doc.name);
                 if (doc.sizeBytes) $('#drivr-filesize').html(human_file_size(doc.sizeBytes));
                 filetype = 'document';
@@ -190,7 +190,7 @@ var Drivr = (function($) {
                 }
                 $handle = $('#wpdrv-embed-' + handle);
                 $('#drivr-icon').removeClass().addClass(filetype);
-                if(!doc.hasOwnProperty('isShared')){
+                if (!doc.hasOwnProperty('isShared')) {
                     showerror();
                 }
                 $('#awsm-link-txt').val(doc.name);
@@ -212,41 +212,42 @@ var Drivr = (function($) {
                     $mediainsert.removeAttr('disabled');
                 });
             }
-            $.each(drivrdoc, function( i, doc ) { 
+            $.each(drivrdoc, function(i, doc) {
                 filetype = 'document';
-                if ($.inArray(doc.type, ['document', 'photo','video']) != -1) {
+                if ($.inArray(doc.type, ['document', 'photo', 'video']) != -1) {
                     filetype = doc.type;
                 }
                 link_type(doc);
             });
         },
-        link_type = function(doc){
+        link_type = function(doc) {
             if (filetype == 'video' && doc.serviceId == 'web') {
                 $linkselect.val('preview').attr('disabled', true);
             }
-            if(doc.mimeType.indexOf('vnd.google-apps')!= -1){
+            if (doc.mimeType.indexOf('vnd.google-apps') != -1) {
                 $linkselect.val('preview').attr('disabled', true);
             }
         },
         insert_item = function(e) {
             e.preventDefault();
             var embeditem = $("#wpdrivr-popup input[name='drivr-insert-type']:checked").val();
-            var shortcode =  '';
-            $.each(drivrdoc, function( i, doc ) { 
+            var shortcode = '';
+            $.each(drivrdoc, function(i, doc) {
                 filetype = 'document';
-                if ($.inArray(doc.type, ['document', 'photo','video']) != -1) {
+                if ($.inArray(doc.type, ['document', 'photo', 'video']) != -1) {
                     filetype = doc.type;
                 }
-                if(embeditem=='file'){filetype = 'file';}
-                shortcode +=  Drivr[filetype](doc)+'<br/>';
+                if (embeditem == 'file') { filetype = 'file'; }
+                shortcode += Drivr[filetype](doc) + '<br/>';
             });
             wp.media.editor.insert(shortcode);
         },
         document_handle = function(doc) {
-            var documenthtml = "",filemime="document";
-            if(doc.mimeType.indexOf('vnd.google-apps')!= -1){
+            var documenthtml = "",
+                filemime = "document";
+            if (doc.mimeType.indexOf('vnd.google-apps') != -1) {
                 filemime = doc.mimeType.split('.').pop();
-            }else{
+            } else {
                 filemime = doc.mimeType.split("/").shift();
             }
             if (doc) {
@@ -289,8 +290,8 @@ var Drivr = (function($) {
                 } else {
                     linktxt = linkinurl;
                 }
-                if(multiple){
-                  linktxt = doc.name;  
+                if (multiple) {
+                    linktxt = doc.name;
                 }
                 linkhtml = '<a href="' + linkinurl + '"' + Linkattr + '>' + linktxt + '</a>';
                 return linkhtml;
@@ -341,7 +342,7 @@ var Drivr = (function($) {
             if (bytes < thresh) return bytes + ' B';
             var units = ['KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
             var u = -1;
-            do { bytes /= thresh; ++u; } while (bytes >= thresh);
+            do { bytes /= thresh;++u; } while (bytes >= thresh);
             return bytes.toFixed(1) + ' ' + units[u];
         },
         onAuthApiLoad = function() {
@@ -352,8 +353,8 @@ var Drivr = (function($) {
         },
         reset = function() {
             hiderror();
-            drivrdoc = '', localfile = false,multiple=false;
-            $handle = "",mimetype="";
+            drivrdoc = '', localfile = false, multiple = false;
+            $handle = "", mimetype = "";
             filetype = 'document';
             $linkhandle.addClass('hidden');
             $('#drivr-filesize').html('');
@@ -381,10 +382,10 @@ var Drivr = (function($) {
         };
     return {
         init: init,
-        document:document_handle,
-        photo:photo_handle,
-        video:video_handle,
-        file:link_handle,
+        document: document_handle,
+        photo: photo_handle,
+        video: video_handle,
+        file: link_handle,
     };
 })(jQuery);
 jQuery(Drivr.init());

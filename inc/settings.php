@@ -16,7 +16,7 @@ $tab = isset( $_GET['tab'] ) ? $_GET['tab'] : 'general'; if(!in_array($tab, arra
                   <?php settings_fields( 'drivr-settings-group' ); ?>
                   <div class="wpdvr-form-item">
                      <h3><?php _e('Manage services',$this->text_domain);?></h3>
-
+                     <p><?php _e('Drag and drop services to change the tab order. Disable the ones you don’t use often.',$this->text_domain);?></p>
                      <?php 
                         $service_order =   $this->options['drivr_service_list'];
                         $option_order  =   get_option('drivr_service_order', $this->settings['drivr_service_order'] ) ;
@@ -102,7 +102,7 @@ $tab = isset( $_GET['tab'] ) ? $_GET['tab'] : 'general'; if(!in_array($tab, arra
          <!-- .wpdvr-right-inner -->
          <div class="clearfix row-2 wpdvr-right-widget">
             <div class="col-2">
-               <a href="https://wordpress.org/support/view/plugin-reviews/embed-any-document#postform" target="_blank">
+               <a href="https://wordpress.org/support/view/plugin-reviews/drivr-google-drive-file-picker#postform" target="_blank">
                <img src="<?php echo $this->plugin_url;?>images/star.gif"><?php _e('Like the plugin?', $this->text_domain);?><br/><?php _e('Rate Now!', $this->text_domain);?>
                </a>
             </div>

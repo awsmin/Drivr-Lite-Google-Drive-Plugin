@@ -35,7 +35,7 @@ class Drivr_lite
     private $settings_slug;
     private $api_url;
     private $settings;
-    private $text_domain = 'drivr-for-google-free';
+    private $text_domain = 'drivr-google-drive-file-picker';
 
     /**
      * Creates or returns an instance of this class.
@@ -405,7 +405,13 @@ function drivr_lite_activation(){
 function drivr_lite_disable_self(){
     if ( class_exists( 'Awsm_drivr' ) ) {
         deactivate_plugins( plugin_basename( __FILE__ ) );
+        add_action( 'admin_notices', 'drivr_disable_notice' );
     }
+}
+function drivr_disable_notice(){
+    $class = 'notice is-dismissible notice-warning';
+    $message = __( 'Thanks for upgrading Drivr - The Google Drive Plugin! The free version ‘Drivr Lite’ has now been deactivated.', 'drivr-google-drive-file-picker' );
+    printf( '<div class="%1$s"><p>%2$s</p></div>', $class, $message ); 
 }
 // Plugin activation hook
 add_action( 'plugins_loaded', 'drivr_lite_activation' );
