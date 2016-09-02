@@ -45,7 +45,7 @@ Drivr uses Google Drive Picker API to let users interact with their Google Drive
 
 == Screenshots ==
 
-1. ‘Add From Driv' button integrated into WordPress visual editor
+1. ‘Add From Drive' button integrated into WordPress visual editor
 2. Add document popup
 3. Upload document
 4. Embedding document
