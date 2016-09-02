@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-07-27 00:15+0530\n"
+"POT-Creation-Date: 2016-09-02 11:32+0530\n"
 "PO-Revision-Date: 2016-07-27 00:14+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,167 +16,147 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: drivr-for-google-drive.php:74
+#: drivr-lite.php:75
 msgid "Google Drive"
 msgstr ""
 
-#: drivr-for-google-drive.php:75
+#: drivr-lite.php:76
 msgid "Upload to Google Drive"
 msgstr ""
 
-#: drivr-for-google-drive.php:76
+#: drivr-lite.php:77
 msgid "Recent Files"
 msgstr ""
 
-#: drivr-for-google-drive.php:77
+#: drivr-lite.php:78
 msgid "Videos"
 msgstr ""
 
-#: drivr-for-google-drive.php:78
+#: drivr-lite.php:79
 msgid "Spreadsheets"
 msgstr ""
 
-#: drivr-for-google-drive.php:79
+#: drivr-lite.php:80
 msgid "PDFs"
 msgstr ""
 
-#: drivr-for-google-drive.php:80
+#: drivr-lite.php:81
 msgid "Presentations"
 msgstr ""
 
-#: drivr-for-google-drive.php:81
+#: drivr-lite.php:82
 msgid "Docs"
 msgstr ""
 
-#: drivr-for-google-drive.php:82
+#: drivr-lite.php:83
 msgid "Photos"
 msgstr ""
 
-#: drivr-for-google-drive.php:83
+#: drivr-lite.php:84
 msgid "YouTube Search"
 msgstr ""
 
-#: drivr-for-google-drive.php:130
+#: drivr-lite.php:139
 msgid "No Url Found"
 msgstr ""
 
-#: drivr-for-google-drive.php:188
+#: drivr-lite.php:200
 msgid "Add From Drive"
 msgstr ""
 
-#: drivr-for-google-drive.php:220
+#: drivr-lite.php:232
 msgid "Settings"
 msgstr ""
 
-#: drivr-for-google-drive.php:258
+#: drivr-lite.php:270
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: drivr-for-google-drive.php:393
-msgid "Add From Google Drive"
+#: drivr-lite.php:394
+msgid "Multiple files"
 msgstr ""
 
-#: drivr-for-google-drive.php:413
-msgid "You do not have sufficient permissions to upload files"
-msgstr ""
-
-#: drivr-for-google-drive.php:417
-msgid "Verification failed"
-msgstr ""
-
-#: drivr-for-google-drive.php:443
-msgid "Invalid URL Provided."
-msgstr ""
-
-#: drivr-for-google-drive.php:447
-msgid "Could not create Temporary file."
-msgstr ""
-
-#: drivr-for-google-drive.php:544
-msgid "Invalid URL"
-msgstr ""
-
-#: inc/popup.php:11
+#: inc/popup.php:7
 msgid "Add from Google Drive"
 msgstr ""
 
-#: inc/popup.php:28
+#: inc/popup.php:24
 msgid "Insert Options"
 msgstr ""
 
-#: inc/popup.php:36
+#: inc/popup.php:32
 msgid "Embed this"
 msgstr ""
 
-#: inc/popup.php:45
+#: inc/popup.php:41
 msgid "Title"
 msgstr ""
 
-#: inc/popup.php:51
+#: inc/popup.php:47
 msgid "Caption"
 msgstr ""
 
-#: inc/popup.php:57
+#: inc/popup.php:53
 msgid "Alt text"
 msgstr ""
 
-#: inc/popup.php:68
+#: inc/popup.php:64
 msgid "Alignment"
 msgstr ""
 
-#: inc/popup.php:72
+#: inc/popup.php:68
 msgid "Left"
 msgstr ""
 
-#: inc/popup.php:75
+#: inc/popup.php:71
 msgid "Center"
 msgstr ""
 
-#: inc/popup.php:78
+#: inc/popup.php:74
 msgid "Right"
 msgstr ""
 
-#: inc/popup.php:81 inc/popup.php:97
+#: inc/popup.php:77 inc/popup.php:93
 msgid "None"
 msgstr ""
 
-#: inc/popup.php:87 inc/popup.php:133
+#: inc/popup.php:83 inc/popup.php:129
 msgid "Link"
 msgstr ""
 
-#: inc/popup.php:91
+#: inc/popup.php:87
 msgid "Media File"
 msgstr ""
 
-#: inc/popup.php:94
+#: inc/popup.php:90
 msgid "Custom URL"
 msgstr ""
 
-#: inc/popup.php:105
+#: inc/popup.php:101
 msgid "Size"
 msgstr ""
 
-#: inc/popup.php:124
+#: inc/popup.php:120
 msgid "Insert as a link"
 msgstr ""
 
-#: inc/popup.php:137
+#: inc/popup.php:133
 msgid "Force Download"
 msgstr ""
 
-#: inc/popup.php:140
+#: inc/popup.php:136
 msgid "Drive Preview"
 msgstr ""
 
-#: inc/popup.php:147
+#: inc/popup.php:143
 msgid "Open in new tab"
 msgstr ""
 
-#: inc/popup.php:157
+#: inc/popup.php:153
 msgid "Link text"
 msgstr ""
 
-#: inc/popup.php:173
+#: inc/popup.php:169
 #, php-format
 msgid ""
 "The file you have selected is private. <a href=\"#\" id=\"drivr-file-link\" "
@@ -184,23 +164,30 @@ msgid ""
 "it public.</a>"
 msgstr ""
 
-#: inc/popup.php:185
+#: inc/popup.php:173
+#, php-format
+msgid ""
+"Upgrade to <a href=\"%1$s\" target=\"_blank\">premium</a> version for more "
+"cool features."
+msgstr ""
+
+#: inc/popup.php:186
 msgid "Insert"
 msgstr ""
 
-#: inc/popup.php:185
+#: inc/popup.php:186
 msgid "Loading..."
 msgstr ""
 
-#: inc/popup.php:188
+#: inc/popup.php:189
 msgid "Cancel"
 msgstr ""
 
-#: inc/popup.php:200
+#: inc/popup.php:201
 msgid "API Key not found!"
 msgstr ""
 
-#: inc/popup.php:202
+#: inc/popup.php:203
 #, php-format
 msgid ""
 "<p>The plugin needs you to submit your Google Drive API key. Just only once! "
@@ -224,70 +211,74 @@ msgstr ""
 msgid "Manage services"
 msgstr ""
 
-#: inc/settings.php:40
+#: inc/settings.php:39
+msgid "Pro feature"
+msgstr ""
+
+#: inc/settings.php:43
 msgid "ON"
 msgstr ""
 
-#: inc/settings.php:41
+#: inc/settings.php:44
 msgid "OFF"
 msgstr ""
 
-#: inc/settings.php:52
+#: inc/settings.php:55
 msgid "Save Settings"
 msgstr ""
 
-#: inc/settings.php:61
+#: inc/settings.php:64
 msgid "Google API Access"
 msgstr ""
 
-#: inc/settings.php:64
+#: inc/settings.php:67
 msgid "Client ID"
 msgstr ""
 
-#: inc/settings.php:68
+#: inc/settings.php:71
 msgid "API Key"
 msgstr ""
 
-#: inc/settings.php:72
+#: inc/settings.php:75
 msgid "Get my key"
 msgstr ""
 
-#: inc/settings.php:72
+#: inc/settings.php:75
 msgid "How to get it?"
 msgstr ""
 
-#: inc/settings.php:89
+#: inc/settings.php:92
 msgid "Designed and developed by"
 msgstr ""
 
-#: inc/settings.php:90
+#: inc/settings.php:93
 msgid "awsm innovations"
 msgstr ""
 
-#: inc/settings.php:104
+#: inc/settings.php:106
 msgid "Like the plugin?"
 msgstr ""
 
-#: inc/settings.php:104
+#: inc/settings.php:106
 msgid "Rate Now!"
 msgstr ""
 
-#: inc/settings.php:110
+#: inc/settings.php:112
 msgid "Need Help?"
 msgstr ""
 
-#: inc/settings.php:110
+#: inc/settings.php:112
 msgid "Open a Ticket"
 msgstr ""
 
-#: inc/settings.php:117
+#: inc/settings.php:119
 msgid "More Links"
 msgstr ""
 
-#: inc/settings.php:119
+#: inc/settings.php:121
 msgid "Getting Google Drive API Keys"
 msgstr ""
 
-#: inc/settings.php:120
+#: inc/settings.php:122
 msgid "FAQs"
 msgstr ""

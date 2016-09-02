@@ -398,12 +398,12 @@ class Drivr_lite
 }
 
 function drivr_lite_activation(){
-    if ( !class_exists('Drivr_lite') ) {
-        Drivr_free::get_instance();
+    if ( !class_exists('Awsm_drivr') ) {
+        Drivr_lite::get_instance();
     }
 }
 function drivr_lite_disable_self(){
-    if ( class_exists( 'Drivr_lite' ) ) {
+    if ( class_exists( 'Awsm_drivr' ) ) {
         deactivate_plugins( plugin_basename( __FILE__ ) );
     }
 }
