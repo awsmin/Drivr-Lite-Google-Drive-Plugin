@@ -120,7 +120,7 @@ var Drivr = (function($) {
         },
         file_picker = function() {
             var views = {
-                drive: new google.picker.DocsView(),
+                drive: new google.picker.DocsView().setIncludeFolders(true),
                 upload: new google.picker.DocsUploadView(),
             };
             var picker = new google.picker.PickerBuilder()
