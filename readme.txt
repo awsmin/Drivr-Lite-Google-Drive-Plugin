@@ -61,3 +61,6 @@ Unfortunately we do not have the privilege to alter any features and options tha
 = Google Drive popup shows an error. =
 
 Usually errors show up when the API settings are not configured properly. In that case, please double-check the API configurations with [the steps] (http://awsm.in/drivr-documentation/#cloudapi) . Make sure you have enabled Drive API and Google Picker API in API Manager. If it’s still not working, try generating a new API key and client ID.
+
+== Tags ==
+google drive, google docs, embed pdf, embed drive, drive, gdrive
