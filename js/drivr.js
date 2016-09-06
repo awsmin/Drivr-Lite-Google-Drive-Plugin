@@ -86,6 +86,7 @@ var Drivr = (function($) {
             DrivrEl.setAttribute('src', 'https://apis.google.com/js/api.js');
             DrivrEl.setAttribute('gapi_processed', 'true');
             document.head.appendChild(DrivrEl);
+            gload();
         },
         no_api_handle = function() {
             $('#wpdrivr-nokey').removeClass('hidden');
@@ -94,6 +95,16 @@ var Drivr = (function($) {
             tb_show("Drivr", "#TB_inline?inlineId=wpdrivr-popup-wrap&amp;width=1030&amp;modal=true", null);
             popup_position();
             return false;
+        },
+        gload = function(){
+            gapi.load('auth',{'callback':function(){
+                window.gapi.auth.authorize({
+                'client_id': driveclientId,
+                'immediate':true,
+                'scope': ['https://www.googleapis.com/auth/drive']
+                 }, null);
+            }}); 
+            gapi.load('picker'); 
         },
         load_gapi = function() {
             reset();
@@ -126,7 +137,7 @@ var Drivr = (function($) {
             var picker = new google.picker.PickerBuilder()
                 .setOrigin(origin)
                 .setOAuthToken(oauthToken)
-                .setDeveloperKey(driveapiKey)
+                //.setDeveloperKey(driveapiKey)
                 .setCallback(picker_callback);
             $.each(service_order, function(index, view) {
                 if (service_list[view]) {

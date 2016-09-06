@@ -3,7 +3,7 @@
 Plugin Name: Drivr Lite - Google Drive Plugin
 Plugin URI: http://awsm.in/drivr-documentation/
 Description: Drivr helps you to access files from your Google Drive Account quickly and seamlessly.
-Version: 1.0
+Version: 1.0.1
 Author: Awsm Innovations
 Author URI: http://awsm.in
 License: GPL V3
@@ -62,7 +62,7 @@ class Drivr_lite
         $this->plugin_base    = dirname($this->base_file);
         $this->plugin_file    = __FILE__;
         $this->settings_slug  = 'drivr-settings-free';
-        $this->plugin_version = '1.0';
+        $this->plugin_version = '1.0.1';
 
         $this->settings = array(
             'drivr_service_order' => 'drive,upload,recent,video,spreadsheets,pdfs,presentations,docs,photos,youtube',
