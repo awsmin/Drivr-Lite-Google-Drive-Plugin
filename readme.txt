@@ -5,18 +5,24 @@ Author URI: http://awsm.in
 Requires at least: 4.0
 Tested up to: 4.6
 Stable tag: trunk
-License: GPL
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Summary ==
 
 Drivr helps you to insert files and documents from your Google Drive to your WordPress site quickly and seamlessly.
 
 == Description ==
-What makes Drivr stands out is the way it handles different type of files. If you choose an image file, you will get a friendly interface to add it into content editor just like WordPress' default Media Library. If you choose a media file or a document Drivr will ask you if you want to embed it to your website.
+Drivr lets you access docs and files from your Google Drive account and help you to add them straight to your WordPress website securely and safely.
 
-Drivr uses Google Drive Picker API to let users interact with their Google Drive Account.
+[View Demo](http://dev.awsm.in/innovations/drivr-google-drive-plugin/)
 
-Key Features
+
+Drivr uses Google Picker API - the most recommended and seamless method to access your Google Drive files. It is integrated seamlessly into the post editor. With a click on ‘Add From Drive’ button it lets you access your Google Drive Account in a Modal Window, which actually is known as Google Drive Picker.
+
+What makes Drivr stands out is the way it handles different type of files. If you choose an image file, you will get a friendly interface to add it into content editor just like WordPress\' default Media Library. If you choose a media file or a document Drivr will ask you if you want to embed it to your website.
+
+= Key Features =
 
 * View files from your Google Drive Account
 * Drag-n-drop upload files to your Google Drive Account
@@ -27,7 +33,7 @@ Key Features
 * Insert images to Visual Editor
 * Options for images to change dimensions, add captions, etc
 
-Pro Version Features
+= Pro Version Features =
 
 * Upload multiple files at once
 * Mutli-select option to choose files from Drive
@@ -37,6 +43,7 @@ Pro Version Features
 * YouTube search tab to search and embed videos
 * Premium Support
 
+[Buy Drivr Pro](http://goo.gl/y4Uf2w)
 
 == Installation ==
 
